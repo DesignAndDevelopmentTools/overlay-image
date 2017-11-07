@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.img {
+  border-radius: 100%;
+  display: flex;
+  flex: 0 0 150px;
+  overflow: hidden;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.img img {
+  height: 100%;
+}
+
+.img__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  color: #fafafa;
+  text-align: center;
+  font-size: 24px;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+}
+
+
+.img:hover .img__overlay {
+  height: 50%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <div class="img" >
+   <img src="img1.jpg" class="imgCntn">
+  <div class="img__overlay">Hey!</div>
+  </div>
+
+
+</body>
+</html>
